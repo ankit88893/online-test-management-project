@@ -1,0 +1,50 @@
+<h3>Test details</h3>
+<form #idform=ngForm (ngSubmit)=findTest(idform)>
+
+  <div class="form-group">
+    <label>Test Id</label>
+    <input type="number" name="testid" ngModel class="form-control">
+  </div>
+  <input type="submit" value="Search" class="btn btn-primary">
+</form>
+<br>
+
+<div *ngIf="test!==undefined">
+
+  <!-- <div class="alert alert-primary" role="alert">
+    <h2 class="alert-heading"> Test Details Given Below</h2>
+    <hr>
+
+  </div> -->
+
+  <br>
+
+  <div class="alert alert-primary" role="alert">
+    Test Title <a href="#" class="alert-link"> {{test.testTitle}} </a>
+  </div>
+  <br>
+
+  <div class="alert alert-primary" role="alert">
+    Test Duration <a href="#" class="alert-link"> {{test.testDuration}} </a>
+  </div>
+  <br>
+  <div class="alert alert-primary" role="alert">
+    Total marks is <a href="#" class="alert-link"> {{test.testTotalMark}} </a>
+  </div>
+  <br>
+
+  <div class="alert alert-primary" role="alert">
+    Marks Scored is <a href="#" class="alert-link"> {{test.testMarkScored}} </a>
+  </div>
+  <br>
+
+  <div class="alert alert-primary" role="alert">
+    Start time <a href="#" class="alert-link"> {{test.startTime}} </a>
+  </div>
+  <br>
+
+  <div class="alert alert-primary" role="alert">
+    End time <a href="#" class="alert-link"> {{test.endTime}} </a>
+  </div>
+
+</div>

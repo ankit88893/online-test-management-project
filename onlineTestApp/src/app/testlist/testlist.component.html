@@ -1,0 +1,78 @@
+<div class="panel-heading">
+    <h3>Tests List</h3>
+</div>
+<!-- <div class="panel"> -->
+
+<table class="table table-striped" border="15">
+
+
+    <tr  class="danger" class="info">
+        <th>Id</th>
+        <th>Test Title</th>
+        <th>Test Duration</th>
+        <th>Total Mark</th>
+        <th>Mark Scored</th>
+        <th>Start Time</th>
+        <th>End Time</th>
+        <th>Remove List</th>
+    </tr>
+
+    <tr class="danger" *ngFor="let test of tests;let i=index">
+        <!-- doubt why not danger class is working -->
+
+        <td>
+            <h4>
+            {{test.id}}
+            </h4>
+        </td>
+        <td>
+            <h5>
+            {{test.testTitle}}
+            </h5>
+        </td>
+
+        <td>
+            <h6>
+            {{test.testDuration}}
+            </h6>
+
+        </td>
+
+        <td>
+            <h6>
+            {{test.testTotalMark}}
+            </h6>
+        </td>
+        <td>
+            <h6>
+            {{test.testMarkScored}}
+            </h6>
+        </td>
+        <td>
+            <h6>
+            {{test.startTime}}
+            </h6>
+        </td>
+
+        <td>
+            <h6>
+            {{test.endTime}}
+            </h6>
+        </td>
+        <td>
+            <button (click)="removeTest(test.id)" class="btn  btn-primary">Remove </button>
+
+        </td>
+
+    </tr>
+</table>
+
+
+
+<!-- 
+
+<div class="table-responsive">
+    <table class="table">
+      ...
+    </table>
+  </div> -->

@@ -1,0 +1,95 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="" routerLink="app-home">Online Test Management</a>
+
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-support">
+
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbar-support">
+    <ul class="navbar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="testdetails">Test Details</a>
+
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="testlist">Test list</a>
+
+      </li>
+
+     
+
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="addtest">Add Test</a>
+
+    </ul>
+  </div>
+</nav>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+      <div style="margin-top: 50px;margin-bottom: 20px;">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+    
+    <div class="offset-md-1 col-md-2">
+      <div style="margin-top: 50px;margin-bottom: 20px;">
+        <h3>Ads Section</h3>
+        
+      
+
+        <div>
+          <div class="alert alert-primary" role="alert">
+          <a href="https://www.w3schools.com/" class="alert-link" >Visit W3Schools.com!</a>
+          </div>
+          <img src="../../assets/w3.png" width="100" height="100">
+        </div>
+        
+        
+
+        <br><hr><hr>
+
+        <div>
+        
+          <div class="alert alert-primary" role="alert">
+          <a href="https://www.udemy.com/" class="alert-link">learn and explore here </a>
+          </div>
+          <img src="../../assets/udemy.png" width="100" height="100">
+        </div>
+        
+        <br><hr><hr>
+        
+
+        <div>
+        
+          <div class="alert alert-primary" role="alert">
+
+          <a href="https://www.zomato.com/melbourne  "class="alert-link">order delicious online </a>
+          </div>
+          <img src="../../assets/zomato.jpg" width="100" height="100">
+        </div>
+
+
+
+        
+        <!-- <div>
+          Apply for Lpu
+          <div class="alert alert-primary" role="alert">
+          <a href="https://www.lpu.in/" class="alert-link">Visit LPU</a>
+          </div>
+          <img src="../../assets/lpulogo.png" width="100" height="100">
+        </div>
+         -->
+        
+
+
+      </div>
+    </div>
+  </div>
+</div>
